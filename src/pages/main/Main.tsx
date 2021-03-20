@@ -54,7 +54,7 @@ export default function Main() {
                 </Toolbar>
             </AppBar>
             <Paper className={classes.identity}>
-                <TextField label='Nom' variant='outlined' />
+                <TextField label='Name' variant='outlined' />
                 <section>
                     <TextField label='Origin' variant='outlined' select>
                         <MenuItem value={0}>MondStadt</MenuItem>
@@ -133,7 +133,7 @@ export default function Main() {
                                         Body
                                     </TableCell>
                                     <TableCell><TextField margin='dense' onChange={handlePvChange} /></TableCell>
-                                    <TableCell align='right'>Points de vie : {pv}</TableCell>
+                                    <TableCell align='right'>Health : {pv}</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell component="th" scope="row">
@@ -147,7 +147,7 @@ export default function Main() {
                                         Power
                                     </TableCell>
                                     <TableCell><TextField margin='dense' onChange={handlePouvoirChange} /></TableCell>
-                                    <TableCell align='right'>Points de vision : {vision}</TableCell>
+                                    <TableCell align='right'>Vision points : {vision}</TableCell>
                                 </TableRow>
                                 <TableRow>
                                     <TableCell component="th" scope="row">
